@@ -1,16 +1,12 @@
-#Code book of Getting and Cleaning Data course project
-
-# Getting-and-Cleaning-Data-Course-Project
-Getting and Cleaning Data Course Project 
-
+# Code book of Getting and Cleaning Data course project
 
 The main R script file is run_analysis.R for execute and prepare the data for this data repository. It stored the tidy datasets in the TidyData.txt file. 
 
-#Download the dataset
+# Download the dataset
 
 Dataset has downloaded and extracted under the folder called UCI HAR Dataset. The first row of each file contains the names of the variables and the following rows contain the values of these variables.
 
-#List of Variables:
+# List of Variables:
 
 I.	features variable is assigned by features.txt datasets: The features come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ..
 
@@ -27,7 +23,7 @@ VII.	x_train  variable is assigned by test/X_train.txt datasets: All the feature
 
 VIII.	y_train  variable is assigned by test/y_train.txt datasets: All the train data of activities’ code labels.
 
-#Transformations
+# Transformations
 
 Step 1: Merges the training and the test sets to create one data set. 
 The following steps and variables are used to complete the above operation.
