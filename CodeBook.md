@@ -1,25 +1,39 @@
-Code book of Getting and Cleaning Data course project
+#Code book of Getting and Cleaning Data course project
+
 The main R script file is run_analysis.R for execute and prepare the data for this data repository. It stored the tidy datasets in the TidyData.txt file. 
 
-Download the dataset
+#Download the dataset
+
 Dataset has downloaded and extracted under the folder called UCI HAR Dataset. The first row of each file contains the names of the variables and the following rows contain the values of these variables.
 
-List of Variables:
+#List of Variables:
+
 I.	features variable is assigned by features.txt datasets: The features come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ..
+
 II.	activity_labels variable is assigned by activity_labels.txt datasets : All activities are performed when the corresponding measurements were taken.
+
 III.	subject_test variable is assigned by test/subject_test.txt datasets:  All the ID of participant.
 IV.	X_test  variable is assigned by test/X_test.txt datasets:  All the features test data. It includes 2947 rows and 561 columns. 
+
 V.	y_test variable is assigned by test/y_test.txt datasets:  All the columns contains test data of activities’ code labels and it has 2947 rows and 1 column.  
+
 VI.	subject_train variable is assigned by test/subject_train.txt datasets: 7352 rows, 1 column contains train data.
+
 VII.	x_train  variable is assigned by test/X_train.txt datasets: All the features train data was recorded.
+
 VIII.	y_train  variable is assigned by test/y_train.txt datasets: All the train data of activities’ code labels.
 
-Transformations
+#Transformations
+
 Step 1: Merges the training and the test sets to create one data set. 
 The following steps and variables are used to complete the above operation.
+
 I.	mergedDataX  variable is created to store the data by merging X_train and X_test using rbind() function
+
 II.	mergedDataY variable is created to store the result data by merging y_train and y_test using rbind() function
+
 III.	mergedDataSubject variable is  created to store the result dataset by merging subject_train and subject_test using rbind() function.
+
 IV.	mergedData variable is created to store the result dataset by merging mergedDataSubject, mergedDataX  and mergedDataY using cbind() function
 
 Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -34,5 +48,7 @@ Step 4. Appropriately labels the data set with descriptive variable names
 o	id column in masterDataSets renamed into activity_name
 o	The initial f and t were expanded to Frequency and Time respectively.
 o	Acc, Gyro, Mag, Freq, mean, std and BodyBody were replaced with Accelerometer, Gyroscope, Magnitude, Frequency, Mean, STD and Body respectively.
+
 finalDataSets is created by sumarizing masterDataSets taking the means of each variable for each activity and each subject, after grouped by subject and activity_name and export finalDataSets into TidyData.txt file.
+
 The collection of the source data and the transformations listed above were implemented by the run_analysis.R R script (see README.md file for usage instructions).
