@@ -1,5 +1,9 @@
 #Code book of Getting and Cleaning Data course project
 
+# Getting-and-Cleaning-Data-Course-Project
+Getting and Cleaning Data Course Project 
+
+
 The main R script file is run_analysis.R for execute and prepare the data for this data repository. It stored the tidy datasets in the TidyData.txt file. 
 
 #Download the dataset
