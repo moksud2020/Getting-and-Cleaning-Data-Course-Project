@@ -53,5 +53,3 @@ o	The initial f and t were expanded to Frequency and Time respectively.
 o	Acc, Gyro, Mag, Freq, mean, std and BodyBody were replaced with Accelerometer, Gyroscope, Magnitude, Frequency, Mean, STD and Body respectively.
 
 finalDataSets is created by sumarizing masterDataSets taking the means of each variable for each activity and each subject, after grouped by subject and activity_name and export finalDataSets into TidyData.txt file.
-
-The collection of the source data and the transformations listed above were implemented by the run_analysis.R R script (see README.md file for usage instructions).
