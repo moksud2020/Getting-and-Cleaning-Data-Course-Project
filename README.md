@@ -13,6 +13,8 @@ The source data set has obtained from the [Human Activity Recognition Using Smar
 - train/y_train.txt - activity (from 1 to 6) for each measurement from the train set
 - test/y_test.txt - activity (from 1 to 6) for each measurement from the test set
 
+## Repository
+
 This repository contains the following files:
 
 - `README.md`, this file describe an overview of the data set and how it was transformed.
@@ -26,3 +28,13 @@ the.
   - Appropriately labels the data set with descriptive variable names.
   - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+## How dose it works?
+The following steps was follow to perform the analysis:
+- Download the data form this [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#) source and unziped data and store in UCI HAR Dataset directory.
+- Read data all text file under this repository and assigned in the variables.
+- The training and the test datasets has marged and assigned into new variable.
+-There are some invalid characters in the original column names so the column_names variable is created for forcing unique column names with valid characters, with make.names() function. A new data frame is created by selecting columns (subject, id, mean and std) for each measurement from mergedData.(STEP 2: Extract only the measurements on the mean and standard deviation for each measurement of assignment).
+- The id column of the masterDataSets replaced with the activity_name. This is the second column of the activity_labels variable. (STEP 3: Uses descriptive activity names to name the activities in the data set).
+- The variable names were replaced with descriptive variable names (e.g. tBodyAcc-mean()-X was expanded to timeDomainBodyAccelerometerMeanX).(STEP 4: Appropriately labels the data set with descriptive variable names).
+- finalDataSets is created by sumarizing masterDataSets taking the means of each variable for each activity and each subject, after grouped by subject and activity_name and export finalDataSets into TidyData.txt file.(STEP: 5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.)
+ - Write finalDataSets into `TidyData.txt` file.
