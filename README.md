@@ -31,8 +31,8 @@ the.
 ## How it works?
 The following steps was follow to perform the analysis:
 - Download the data form this [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#) source and unziped the data and stored it in UCI HAR Dataset directory.
-- Read data all text file under this repository and assigned in the variables.
-- The training and the test datasets has marged and assigned into new variable.
+- Read the from all data text file under this repository and assigned in the list of variables.
+- The training and the test datasets has marged and assigned into a new variable.
 -There are some invalid characters in the original column names so the column_names variable is created for forcing unique column names with valid characters, with make.names() function. A new data frame is created by selecting columns (subject, id, mean and std) for each measurement from mergedData.(STEP 2: Extract only the measurements on the mean and standard deviation for each measurement of assignment).
 - The id column of the masterDataSets replaced with the activity_name. This is the second column of the activity_labels variable. (STEP 3: Uses descriptive activity names to name the activities in the data set).
 - The variable names were replaced with descriptive variable names (e.g. tBodyAcc-mean()-X was expanded to timeDomainBodyAccelerometerMeanX).(STEP 4: Appropriately labels the data set with descriptive variable names).
