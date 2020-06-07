@@ -28,7 +28,7 @@ the.
   - Appropriately labels the data set with descriptive variable names.
   - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## How dose it works?
+## How it works?
 The following steps was follow to perform the analysis:
 - Download the data form this [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#) source and unziped data and store in UCI HAR Dataset directory.
 - Read data all text file under this repository and assigned in the variables.
