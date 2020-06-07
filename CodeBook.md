@@ -26,7 +26,7 @@ The following variable has created to assign the datasets.
 -	y_train  variable is assigned by test/y_train.txt datasets: All the train data of activities’ code labels.
 
 ## Transformations
-The following process has conduct to perform transformations:
+The following process has conducted to perform transformations:
 
 Step 1: Merges the training and the test sets to create one data set. 
 The following steps and variables are used to complete the above operation.
